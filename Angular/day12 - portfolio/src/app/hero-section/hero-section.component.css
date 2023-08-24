@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'segoe ui light';
+}
+#hero {
+    background-image: url('D:\Projects\ITI.FrontEnd\Angular\Day1\src\assets\img\anime-tokyo_ghoul-blood-grey_eyes-heterochromia-ken_kaneki-red_eyes-white_hair-wound-685660.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  

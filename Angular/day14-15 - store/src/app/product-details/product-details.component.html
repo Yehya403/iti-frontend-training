@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-6">
+        <img class="img-fluid" [src]="product.image" alt="Card image cap" />
+    </div>
+    <div class=" col-md-6 d-flex align-items-center">
+        <div class="fw-bold">
+            <h1>{{ product.title }}</h1>
+            <p>Description: {{ product.description }}</p>
+            <p class="fw-bold">Price: {{ product.price | egyCurrent }}</p>
+            <div class="d-flex justify-content-between">
+                <a class="btn btn-success" > Add to cart </a>
+                <a href="#" class="btn btn-primary">Back to Products</a>
+            </div>
+        </div>
+    </div>
+</div>

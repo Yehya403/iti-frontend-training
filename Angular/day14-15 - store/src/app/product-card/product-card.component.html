@@ -1,0 +1,22 @@
+<mat-card>
+
+  <mat-card-header>
+    <mat-card-title>{{ productItem.title }}</mat-card-title>
+  </mat-card-header>
+
+  <img mat-card-image [src]="productItem.image" alt="Card image cap" class="_product-image" />
+
+  <mat-card-content>
+    <h4>{{ productItem.category }}</h4>
+    <h2>{{ productItem.price | egyCurrent }}</h2>
+  </mat-card-content>
+
+  <mat-card-actions class="justify-content-between">
+    <button mat-flat-button (click)="onAddToCart(productItem)" class="text-bg-success">Add to cart</button>
+    <button mat-flat-button class="text-bg-primary" [routerLink]="['/product/details']"
+      [queryParams]="{ id: productItem.id }">
+      Go to details
+    </button>
+  </mat-card-actions>
+
+</mat-card>

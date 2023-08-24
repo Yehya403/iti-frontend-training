@@ -1,0 +1,11 @@
+<section id="portfolio">
+  <h2 class="m-5" style="color: #3d3d3d">Portfolio</h2>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let project of projects">
+      <div class="card p-5 m-4 text-white" style="background-color: #404040">
+        <h5>{{ project.title }}</h5>
+        <p>{{ project.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
