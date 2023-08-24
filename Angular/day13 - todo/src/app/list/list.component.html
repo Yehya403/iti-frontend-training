@@ -1,0 +1,28 @@
+<div class="mt-5 p-4 list">
+  <ul class="list-unstyled w-50">
+    <li
+      *ngFor="let task of tasks; let i = index"
+      [ngClass]="task.isComplete ? 'bg-success' : 'bg-secondary'"
+      class="p-3 bg-gradient d-flex justify-content-between align-items-center my-2"
+    >
+      <span
+        class="text-white"
+        [ngStyle]="{
+          'text-decoration': task.isComplete ? 'line-through' : 'none'
+        }"
+        >{{ task.taskLabel }}</span
+      >
+      <div>
+        <button class="btn bg-danger text-white me-2" (click)="deleteTask(i)">
+          Delete
+        </button>
+        <button
+          class="btn btn-success text-white"
+          (click)="changeTaskStatus(i)"
+        >
+          {{ task.isComplete ? "Incomplete" : "Complete" }}
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>

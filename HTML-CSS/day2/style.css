@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+  /* box-sizing: border-box; */
+
+}
+body{
+    font-family: 'segoe ui light';
+}
+/******* Nav Section Starts *******/
+.navbar{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(74, 167, 167);
+    padding: 5px 30px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/******* Nav Section Ends *******/
+
+
+
+/*******  Home Section Starts *******/ 
+.primary{
+    background-image: linear-gradient(#73C1BE, #125668);
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.primary-text{
+    text-align: center;
+}
+
+.primary h1{
+    font-size: 50px;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .primary h1 {
+      font-size: 40px;
+    }
+}
+.primary h3{
+color:rgb(70, 70, 185); 
+}
+
+.main-parent{
+    display: flex;
+    /*
+    flex-wrap: wrap;
+    flex-direction: row; 
+    */
+    width: 50%;
+    margin: 40px auto;
+
+}
+
+@media (max-width: 768px){
+    .main-parent {
+      width: 90%;
+      flex-direction: column;
+    }
+}
+
+.webDesign{
+    width: 60%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.webDesign p{
+    font-size: 20px;
+}
+
+.btn1{
+    color: white;
+    padding: 5px;
+    background-color: rgb(42, 173, 173);
+}
+.first-child{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.webDesign img{
+    width: 100%;
+}
+
+.finance {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    position: relative; 
+    height: 400px;
+    border-radius: 25px;
+    background-image: url(businesswoman-using-tablet-analysis.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 20px;
+}
+
+.finance::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 108, 179, 0.19); 
+    border-radius: 25px;
+}
+
+.finance p{
+
+    font-weight: bold;
+}
+.second-child{
+    display: flex;
+    justify-content: space-between;
+}
+.btn2{
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 5px;
+    background-color:aquamarine;
+    color: white;
+    border-radius: 10px;
+}
+
+.finance-twitter{
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url(fu607.png);
+    background-position: 180px 850px;
+}
+/*******  Home Section Ends *******/ 
+#second-home{
+    height: 35vh;
+    background-color: #80D0C7;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+/******* Topic Section Starts *******/
+.secondary{
+    height: 75vh;
+}
+.secondary-main h1{
+    margin-top: 50px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .secondary-main h1 {
+      font-size: 40px;
+    }
+}  
+
+.secondary-list{
+color: gray;
+margin: 50px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.secondary-second {
+display: flex;
+width: 60%;
+margin: 0px auto;
+padding: 0px;
+}
+.secondary-second img{
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .secondary-second {
+      flex-direction: column;
+    }
+}  
+
+.graduation-btn{
+display: flex;
+}
+.secondary-second-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.graduation{
+    margin-right: 50px;
+}
+@media (max-width: 768px) {
+    .secondary-second-inner {
+        flex-direction: column;
+    }
+    .graduation, .educator {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/******* Topic Section Ends *******/
+
+
+
+/*******  Guide Section Starts *******/ 
+.tertiary{
+background-image: url(colleagues-working-cozy-office-medium-shot.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+height: 100vh;
+}
+
+.tertiary h1{
+font-size: 40px;
+display: flex;
+justify-content: center;
+}
+.steps-desc{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.desc{
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .steps-desc,
+    .steps-ask {
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+.steps-ask{
+    font-size: 20px;
+    margin-top: 50px;
+    display: flex;
+}
+@media (max-width: 768px) {
+    .steps-desc {
+        flex-direction: column;
+    }
+}
+.steps-ask h3{
+margin-right: 30px;
+}
+.steps-ask button{
+    border-radius: 30px;
+    padding: 10px;
+}
+/*******  Guide Section Ends *******/ 
+/*******  QAs Section Starts *******/ 
+.quat{
+    display: flex;
+    justify-content: content;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    
+}
+.quaternary-text{
+    margin: 45px;
+    font-size: 35px;
+}
+  
+.quat img{
+    width: 100%;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+/*******  QAs Section Ends *******/
+
+
+
+/*******  Footer Section Starts *******/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer ul{
+    list-style-type:none;
+    margin-top: 20px;
+}
+footer li{
+    font-weight: bold;
+    color: #80D0C7;
+}
+/*******  Footers Section Ends *******/

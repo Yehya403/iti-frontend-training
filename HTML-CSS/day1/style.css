@@ -1,0 +1,22 @@
+body {
+    background-image: url('11.jpeg');
+    text-align: center;
+  }
+h1{
+    font-size: 40px;
+    font-family: fantasy;
+}
+h2{
+    font-family: fantasy;
+}
+form {
+    height: 50%;
+    width: 40%;
+    background-color: #deb887;  
+    display: inline-block;
+}
+.container{
+display: flex;
+justify-content: space-between;
+padding: 20px;
+}
