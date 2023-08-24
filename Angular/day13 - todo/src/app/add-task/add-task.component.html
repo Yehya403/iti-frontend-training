@@ -1,0 +1,19 @@
+<div class="d-flex align-items-end add-task p-4">
+  <div class="w-75">
+    <label for="task" class="fw-bold me-3 mb-2">Task</label>
+    <input
+      id="task"
+      type="text"
+      class="form-control w-100"
+      placeholder="Type Task"
+      [(ngModel)]="taskInput"
+    />
+  </div>
+  <button
+    class="btn btn-primary ms-3 fw-bold w-25"
+    (click)="onAddTask()"
+    [disabled]="!taskInput"
+  >
+    Add Task
+  </button>
+</div>
