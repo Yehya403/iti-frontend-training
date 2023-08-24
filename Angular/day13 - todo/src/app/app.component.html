@@ -1,9 +1,0 @@
-<div class="container p-5 mt-5 mx-auto">
-  <h2 class="text-info text-uppercase fw-bold mb-5">Task Application</h2>
-  <app-add-task (addTaskEmitter)="getTaskList($event)"></app-add-task>
-  <app-list
-    [tasks]="taskList"
-    (deleteTaskEmitter)="updateTaskList($event)"
-    (completeTaskEmitter)="completeTask($event)"
-  ></app-list>
-</div>
