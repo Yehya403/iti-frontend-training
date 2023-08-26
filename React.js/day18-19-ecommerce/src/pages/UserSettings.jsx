@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import {gState} from '../context/Context'
 import {getSingleUser} from '../services/user.service'
 
-export const UserSettings = () => {
+const UserSettings = () => {
     const {data} = useContext(gState)
     const [userSettings , setuserSettings] = useState(null)
 
@@ -21,3 +21,5 @@ export const UserSettings = () => {
     <div>{JSON.stringify(userSettings)}</div>
   )
 }
+
+export default UserSettings
